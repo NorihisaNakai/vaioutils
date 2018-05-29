@@ -1,0 +1,10 @@
+[Unit]
+Description=control vaio fan
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/vaio_fancontrol.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=muti-user.target
